@@ -28,7 +28,19 @@ We will explore the integration of Windows Server 2022 and Windows 10 Pro as par
 
 4. Scalability & Hierarchy
    - AD utilises a structured hierarchy (domains, organizational units, forests) to manage resources in both small and large organizations
+#
 
+# Why Active Directory is Important
+
+Active Directory is one of the most critical assets in any enterprise network. If compromised, attackers can gain domain administrator privileges, effectively granting them control over the entire organisation.
+From a SOC perspective, AD is a goldmine of security logs and indicators, because it records:
+
+   - User logons/logoffs: Detect brute force, password spraying, lateral movement
+   - Account management events: Detect creation of backdoor accounts or privilege escalation
+   - Kerberos activity: Detect Kerberoasting or Golden Ticket attacks.
+   - Policy changes → Detect persistence mechanisms via malicious GPOs
+
+This is why defenders must baseline and monitor AD activity in a SIEM, such as Splunk; it’s often the first place adversaries target after initial compromise.
 #
 
 *Ref : Active Directory Installation*
