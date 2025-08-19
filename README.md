@@ -8,3 +8,11 @@ We will explore the integration of Windows Server 2022 and Windows 10 Pro as par
 *Ref : Active Directory Installation*
 
 ![ADDC-O1](https://github.com/user-attachments/assets/74019068-e734-418e-87d6-42847b4fb0d6)
+
+*Ref : Static IP Assigned for Server*
+
+![static-ip1](https://github.com/user-attachments/assets/5a1edbc3-e605-4eec-8675-338f28ee7c37)
+
+IP Configuration and reachability test(Pfsense as our default DNS)
+
+![config-test](https://github.com/user-attachments/assets/9b578642-bb97-4e65-be17-81d5ff2bec14)
