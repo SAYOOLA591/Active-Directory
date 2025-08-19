@@ -38,7 +38,7 @@ From a SOC perspective, AD is a goldmine of security logs and indicators, becaus
    - User logons/logoffs: Detect brute force, password spraying, lateral movement
    - Account management events: Detect creation of backdoor accounts or privilege escalation
    - Kerberos activity: Detect Kerberoasting or Golden Ticket attacks.
-   - Policy changes → Detect persistence mechanisms via malicious GPOs
+   - Policy changes: Detect persistence mechanisms via malicious GPOs
 
 This is why defenders must baseline and monitor AD activity in a SIEM, such as Splunk; it’s often the first place adversaries target after initial compromise.
 #
