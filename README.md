@@ -14,6 +14,23 @@ We will explore the integration of Windows Server 2022 and Windows 10 Pro as par
 - NAT/RAS
 #
 
+# Key Functions of Active Directory
+
+1. Authentication & Authorization
+   - AD verifies a user’s identity when they log in (authentication)
+   - It grants access to resources based on permissions (authorization)
+
+2. Centralized Management
+   - Administrators can create users, manage groups, reset passwords, and enforce security policies across the domain
+
+3. Group Policy (GPO)
+   - Enforces security baselines, audit policies, software installations, and system configurations automatically across all domain-joined devices
+
+4. Scalability & Hierarchy
+   - AD utilises a structured hierarchy (domains, organizational units, forests) to manage resources in both small and large organizations
+
+#
+
 *Ref : Active Directory Installation*
 
 ![ADDC-O1](https://github.com/user-attachments/assets/74019068-e734-418e-87d6-42847b4fb0d6)
