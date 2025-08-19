@@ -54,3 +54,48 @@ This is why defenders must baseline and monitor AD activity in a SIEM, such as S
 IP Configuration and reachability test(Pfsense as our default DNS)
 
 ![config-test](https://github.com/user-attachments/assets/9b578642-bb97-4e65-be17-81d5ff2bec14)
+
+Windows 10pro Setup & IP Assigning
+
+*Ref*
+![static-ip2](https://github.com/user-attachments/assets/aaf19906-73b2-4658-81e0-9a0422f833f8)
+
+Joining domain
+
+*Ref : Successful Joining ADDC domain*
+
+![domain-joined](https://github.com/user-attachments/assets/f0b1c25d-ccbe-4370-b963-56e476a9bd90)
+
+Provisioning Users to mimic the enterprise environment
+
+![image-users](https://github.com/user-attachments/assets/c82f1cf1-e449-413f-8ef9-df377c9f2683)
+
+---
+
+# Conclusion
+
+This project, built on Windows Server 2022 and Windows 10 Pro, represents a strategic approach to designing a secure and efficient IT environment within a controlled lab setting. It goes beyond simple deployment, it demonstrates precision in system administration, foresight in security planning, and adaptability in real-world scenarios.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
