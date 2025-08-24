@@ -7,11 +7,9 @@ We will explore the integration of Windows Server 2022 and Windows 10 Pro as par
 
 # Technologies/Stacks
 - Active Directory(Active Directory Domain Services and Active Directory Users and Computers)
-- DHCP
 - DNS
 - Remote Access
 - Domain Controller
-- NAT/RAS
 #
 
 # Key Functions of Active Directory
