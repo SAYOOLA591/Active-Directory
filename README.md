@@ -100,7 +100,7 @@ To address this, Microsoft provides recommended audit policy baselines that can 
 - Policy Changes (4739, 4719)
 - Process Creation (4688)
 
-# Recommended System Audit Policy by operating system
+# Recommended System Audit Policy by operating system (Windows)
 
 We will review the recommended audit policies by operating system and categorise them accordingly. To proceed, access our Active Directory Domain Controller (ADDC) and open the Group Policy Management console. Under the forest containing our domain name, navigate to the domain section. From there, create a new policy. Right-click on the new policy and select "Edit." Name the new policy "Audit Policy - Endpoint."
 
@@ -177,6 +177,8 @@ We need to link our Baseline Security Auditing GPO to our OU. By enabling this, 
 
 ![gpo-OU](https://github.com/user-attachments/assets/867db7d3-f7db-4e44-917a-42ae4f1c1356)
 
+---
+
 # Windows 10 Client
 
 Windows 10pro Setup & IP Assigning
@@ -190,7 +192,19 @@ Joining domain
 
 ![domain-joined](https://github.com/user-attachments/assets/f0b1c25d-ccbe-4370-b963-56e476a9bd90)
 
+---
 
+# Installing Sysmon
+
+Although we have updated our machines with the baseline recommendations provided by Microsoft, I'll still install and configure Sysmon to provide additional telemetry. In many environments, a system or even an EDR wouldn't be available. This is why it is essential to know how to enable proper logging on our machines to provide us with the telemetry that can help us during an investigation. Default settings are not enough.
+
+![sysmon-install](https://github.com/user-attachments/assets/6f0965a3-5495-4c21-8695-051c12926157)
+
+---
+
+# Configuring Inputs for Splunk Forwarder
+
+Created an inputs.conf file in C:\Program Files\SplunkUniversalForwarder\etc\system\local on Windows Machine and ADDC01, Configuring settings.
 
 
 
