@@ -36,7 +36,8 @@ Active Directory serves as the central hub for managing users, computers, and se
 # Table Of Content
 
 [Introduction](#introduction)
-
+[Technologies](#technologies)
+[Why Active Directory Matters](#why-active-directory-matters)
 
 # Active Directory Deployement
 
