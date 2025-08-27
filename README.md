@@ -4,21 +4,8 @@
 
 This LAB showcases the design and enhancement of a Windows Active Directory (AD) environment, which forms the foundation of enterprise identity and access management within the Security Operations Environment. The objective of this project is to illustrate how AD security controls, baseline audit policies, and endpoint telemetry can be integrated to improve visibility, ensure compliance, and enhance threat detection across domain-joined systems.
 
-# Overview
-
-[ Domain Controller ]
-   - Active Directory DS
-   - DNS
-   - Baseline Security Audit GPO
-
-     │
-        ▼
-
-[ Windows 10 Client ]
-   - Domain Joined
-   - Receives GPOs
-   - Runs Sysmon for telemetry
-   - Installed Splunk Universal Forwarder
+# Architectural Overview
+![architectu-image](
 
 # **Technologies:**
 
@@ -46,6 +33,12 @@ Active Directory serves as the central hub for managing users, computers, and se
   - Extended visibility into endpoint behavior with Sysmon
   - Integration with SIEMs (e.g., Splunk) for real-time detection
 
+# Table Of Content
+
+[Introduction](Introduction)
+
+
+# Active Directory Deployement
 
 *Ref : Active Directory Installation*
 
@@ -65,7 +58,9 @@ Provisioning Users into their respective Organizational Units (OUs)
 
 ---
 
-# Deploy baseline Audit GPO
+# Deploying Microsoft baseline Audit GPO
+
+By default, Windows systems only log a limited set of events, resulting in significant visibility gaps. For example, many environments are not following the recommendations, and default auditing may miss critical actions, such as privilege escalation, Kerberos abuse, or lateral movement.
 
 We will review the recommended audit policies by operating system and categorise them accordingly. To proceed, access our Active Directory Domain Controller (ADDC) and open the Group Policy Management console. Under the forest containing our domain name, navigate to the domain section. From there, create a new policy. Right-click on the new policy and select "Edit." Name the new policy "Audit Policy - Endpoint."
 
