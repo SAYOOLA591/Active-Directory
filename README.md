@@ -20,10 +20,7 @@ This LAB showcases the design and enhancement of a Windows Active Directory (AD)
    - Runs Sysmon for telemetry
    - Installed Splunk Universal Forwarder
 
-
-
-
-# **Technologies / Stacks:**
+# **Technologies:**
 
 - **Active Directory**
   - Active Directory Domain Services (AD DS)
@@ -50,16 +47,6 @@ Active Directory serves as the central hub for managing users, computers, and se
   - Integration with SIEMs (e.g., Splunk) for real-time detection
 
 
-# What This LAB Covers
-
-This focuses on enhancing and strengthening the Windows components of the SOC Lab, specifically:
-
-   - Active Directory Setup – Domain Controller, OUs, and client domain-join
-   - Baseline Security Auditing – Microsoft-recommended audit policy via GPO
-   - Sysmon Deployment – Advanced endpoint telemetry for process, network, and registry monitoring
-   - Splunk Universal Forwarder – Secure log forwarding from endpoints to the SIEM
-
-
 *Ref : Active Directory Installation*
 
 ![ADDC-O1](https://github.com/user-attachments/assets/74019068-e734-418e-87d6-42847b4fb0d6)
@@ -78,29 +65,7 @@ Provisioning Users into their respective Organizational Units (OUs)
 
 ---
 
-# Baseline Microsoft Security Auditing with Group Policy Management
-
-By default, Windows systems only log a limited set of events, resulting in significant visibility gaps. For example, many environments are not following the recommendations, and default auditing may miss critical actions, such as privilege escalation, Kerberos abuse, or lateral movement. I'll show you what you can enable to follow Microsoft's Audit Policy recommendations, and I'll also include the link below.
-
-To address this, Microsoft provides recommended audit policy baselines that can allow administrators within the domain to just simply update a single policy and push it out to multiple computers within that domain saving a lot of time because you can imagine how long it would take to manually configure a workstation one by one especially if you have let's say 500 workstations so instead of doing that manually we can use GPO policy to push it across devices to do that we want to click on the Start menu and search for a group Policy Management.
-
-[Policy Recommendation](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/plan/security-best-practices/audit-policy-recommendations)
-
-# Why It Matters
-
-- Enhanced visibility - Detects brute force, privilege escalation, and Kerberoasting.
-- Incident response ready - Analysts have the necessary logs to investigate attacks.
-- Compliance alignment - Meets security standards (CIS, NIST, ISO).
-
-# Key Categories to Enable
-
-- Logon/Logoff (4624, 4625, 4634)
-- Account Management (4720–4726, 4728)
-- Directory Service Access (4662)
-- Policy Changes (4739, 4719)
-- Process Creation (4688)
-
-# Recommended System Audit Policy by operating system (Windows)
+# Deploy baseline Audit GPO
 
 We will review the recommended audit policies by operating system and categorise them accordingly. To proceed, access our Active Directory Domain Controller (ADDC) and open the Group Policy Management console. Under the forest containing our domain name, navigate to the domain section. From there, create a new policy. Right-click on the new policy and select "Edit." Name the new policy "Audit Policy - Endpoint."
 
@@ -194,7 +159,7 @@ Joining domain
 
 ---
 
-# Installing Sysmon
+# Sysmon Deployment
 
 Although we have updated our machines with the baseline recommendations provided by Microsoft, I'll still install and configure Sysmon to provide additional telemetry. In many environments, a system or even an EDR wouldn't be available. This is why it is essential to know how to enable proper logging on our machines to provide us with the telemetry that can help us during an investigation. Default settings are not enough.
 
@@ -202,7 +167,7 @@ Although we have updated our machines with the baseline recommendations provided
 
 ---
 
-# Configuring Inputs for Splunk Forwarder
+# Splunk Forwarder
 
 Created an inputs.conf file in C:\Program Files\SplunkUniversalForwarder\etc\system\local on Windows Machine and ADDC01, Configuring settings.
 
