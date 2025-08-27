@@ -32,14 +32,23 @@ Active Directory serves as the central hub for managing users, computers, and se
   - Comprehensive audit logs for accountability and compliance
   - Extended visibility into endpoint behavior with Sysmon
   - Integration with SIEMs (e.g., Splunk) for real-time detection
+#
 
 # Table Of Content
 
 1. [Introduction](#introduction)
 2. [Technologies](#technologies)
 3. [Why Active Directory Matters](#why-active-directory-matters)
+4. [Active Directory Deployment](#active-directory-deployment)
+5. [Deploying Microsoft baseline Audit GPO](#deploying-microsoft-baseline-audit-gpo)
+6. [Advanced Audit Policy Configuration Settings](#advanced-audit-policy-configuration-settings)
+7. [Windows 10 Client](#windows-10-client)
+8. [Sysmon Deployment](#sysmon-deployment)
+9. [Splunk Forwarder](#splunk-forwarder)
 
-# Active Directory Deployement
+---
+
+# Active Directory Deployment
 
 *Ref : Active Directory Installation*
 
