@@ -1,45 +1,64 @@
-# Active Directory
+# Active Directory Security & Endpoint Hardening Lab
 
 # Introduction
 
-We will explore the integration of Windows Server 2022 and Windows 10 Pro as part of this project. Our goal is to address various server challenges, including specific aspects such as power options and network settings. We will cover the elevation of Windows Server through its roles, the creation of an admin account, and the configuration of remote access. This will showcase the simplicity of account automation, and the seamless integration of Windows clients into the domain. Additionally, we will demonstrate reachability through ping tests and lay the groundwork for a study on IT infrastructure. 
+This LAB showcases the design and enhancement of a Windows Active Directory (AD) environment, which forms the foundation of enterprise identity and access management within the Security Operations Environment. The objective of this project is to illustrate how AD security controls, baseline audit policies, and endpoint telemetry can be integrated to improve visibility, ensure compliance, and enhance threat detection across domain-joined systems.
+
+# Overview
+
+[ Domain Controller ]
+   - Active Directory DS
+   - DNS
+   - Baseline Security Audit GPO
+
+     │
+        ▼
+
+[ Windows 10 Client ]
+   - Domain Joined
+   - Receives GPOs
+   - Runs Sysmon for telemetry
+   - Installed Splunk Universal Forwarder
+
+
+
+
+# **Technologies / Stacks:**
+
+- **Active Directory**
+  - Active Directory Domain Services (AD DS)
+  - Active Directory Users and Computers (ADUC)
+  - DNS (Domain Name System) for domain resolution
+- **Domain Controller**
+  - Windows Server providing Active Directory and authentication services
+- **Windows 10 Pro Client**
+  - Domain-joined endpoint for testing Group Policy Objects (GPOs) and telemetry
+- **Sysmon (System Monitor)**
+  - Advanced endpoint telemetry for monitoring process, network, and registry events
+- **Splunk Universal Forwarder**
+  - Log forwarding agent used to send Active Directory, Sysmon, and Windows logs to Splunk SIEM (Security Information and Event Management)
 #
 
-# Technologies/Stacks
-- Active Directory(Active Directory Domain Services and Active Directory Users and Computers)
-- DNS
-- Remote Access
-- Domain Controller
-#
+# Why Active Directory Matters
 
-# Key Functions of Active Directory
+Active Directory serves as the central hub for managing users, computers, and security policies in most enterprise networks. By securing Active Directory and extending its visibility into endpoints, defenders gain improved control over network security.
+  
+  - Centralized control over users, groups, and workstations
+  - Enforced security policies via Group Policy Objects (GPOs)
+  - Comprehensive audit logs for accountability and compliance
+  - Extended visibility into endpoint behavior with Sysmon
+  - Integration with SIEMs (e.g., Splunk) for real-time detection
 
-1. Authentication & Authorization
-   - AD verifies a user’s identity when they log in (authentication)
-   - It grants access to resources based on permissions (authorization)
 
-2. Centralized Management
-   - Administrators can create users, manage groups, reset passwords, and enforce security policies across the domain
+# What This LAB Covers
 
-3. Group Policy (GPO)
-   - Enforces security baselines, audit policies, software installations, and system configurations automatically across all domain-joined devices
+This focuses on enhancing and strengthening the Windows components of the SOC Lab, specifically:
 
-4. Scalability & Hierarchy
-   - AD utilises a structured hierarchy (domains, organizational units, forests) to manage resources in both small and large organizations
-#
+   - Active Directory Setup – Domain Controller, OUs, and client domain-join
+   - Baseline Security Auditing – Microsoft-recommended audit policy via GPO
+   - Sysmon Deployment – Advanced endpoint telemetry for process, network, and registry monitoring
+   - Splunk Universal Forwarder – Secure log forwarding from endpoints to the SIEM
 
-# Why Active Directory is Important
-
-Active Directory is one of the most critical assets in any enterprise network. If compromised, attackers can gain domain administrator privileges, effectively granting them control over the entire organisation.
-From a SOC perspective, AD is a goldmine of security logs and indicators, because it records:
-
-   - User logons/logoffs: Detect brute force, password spraying, lateral movement
-   - Account management events: Detect creation of backdoor accounts or privilege escalation
-   - Kerberos activity: Detect Kerberoasting or Golden Ticket attacks.
-   - Policy changes: Detect persistence mechanisms via malicious GPOs
-
-This is why defenders must baseline and monitor AD activity in a SIEM, such as Splunk; it’s often the first place adversaries target after initial compromise.
-#
 
 *Ref : Active Directory Installation*
 
@@ -53,6 +72,10 @@ IP Configuration and reachability test(Pfsense as our default DNS)
 
 ![config-test](https://github.com/user-attachments/assets/9b578642-bb97-4e65-be17-81d5ff2bec14)
 
+Provisioning Users into their respective Organizational Units (OUs)
+
+![image-users](https://github.com/user-attachments/assets/c82f1cf1-e449-413f-8ef9-df377c9f2683)
+
 Windows 10pro Setup & IP Assigning
 
 *Ref*
@@ -64,15 +87,11 @@ Joining domain
 
 ![domain-joined](https://github.com/user-attachments/assets/f0b1c25d-ccbe-4370-b963-56e476a9bd90)
 
-Provisioning Users to mimic the enterprise environment
 
-![image-users](https://github.com/user-attachments/assets/c82f1cf1-e449-413f-8ef9-df377c9f2683)
 
 ---
 
-# Conclusion
 
-This project, built on Windows Server 2022 and Windows 10 Pro, represents a strategic approach to designing a secure and efficient IT environment within a controlled lab setting. It goes beyond simple deployment, it demonstrates precision in system administration, foresight in security planning, and adaptability in real-world scenarios.
 
 
 
