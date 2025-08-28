@@ -52,11 +52,11 @@ Active Directory serves as the central hub for managing users, computers, and se
 
 ![static-ip1](https://github.com/user-attachments/assets/5a1edbc3-e605-4eec-8675-338f28ee7c37)
 
-IP Configuration and reachability test(Pfsense as our default DNS)
+*Ref : IP Configuration and reachability test(Pfsense as our default DNS)*
 
 ![config-test](https://github.com/user-attachments/assets/9b578642-bb97-4e65-be17-81d5ff2bec14)
 
-Provisioning Users into their respective Organizational Units (OUs)
+*Ref : Provisioning Users into their respective Organizational Units (OUs)*
 
 ![image-users](https://github.com/user-attachments/assets/c82f1cf1-e449-413f-8ef9-df377c9f2683)
 
@@ -111,9 +111,9 @@ System Tracking
 ![system-track2](https://github.com/user-attachments/assets/5fc6e494-89af-4fa1-9820-755a79f80745)
 #
 
-In addition to enabling all the baseline recommendations, we must also allow process tracking, because without process tracking, event ID 4688 is not as effective as it should be.
+In addition to implementing all the baseline recommendations, we must also enable process tracking, as process tracking is essential for making event ID 4688 as effective as it should be.
 
-For example, let me go ahead and search up Event ID 4688, so by default, if we enable 4688, it will log the process name, but take a look at the process command line it's empty so without enabling process tracking you essentially miss out on a lot of information that is why we must allow process tracking.
+For example, let me go ahead and search up Event ID 4688, so by default, if we enable 4688, it will log the process name, but take a look at the process command line, it's empty, so without enabling process tracking, you essentially miss out on a lot of information. That is why we must allow process tracking.
 
 By Default
 
@@ -123,7 +123,7 @@ After Process Logging
 
 ![after-tracking](https://github.com/user-attachments/assets/ec393f62-381a-4234-bbff-fa316a5c5ee0)
 
-So now we have everything pretty much good to go and just remember that we should enable Powershell logging as well just in case and to do that I'll Scroll down and expand Windows Components what we want to look for is Windows Powershell which is right here and we have Turn Module Logging Script Block Logging this one is the Event ID 4104 I'll click on enabled. I'll log the start and stop event and apply OK.
+Now that we have everything in order, we will also enable PowerShell logging. To do that, I'll scroll down and expand the Windows Components section. What we want to look for is Windows PowerShell, which is right here. We have Turn Module Logging Script Block Logging. This one is the Event ID 4104. I'll click on enabled. I'll log the start and stop event and apply OK.
 
 ![powershel-log](https://github.com/user-attachments/assets/b729b754-2422-4b89-b076-1b0fe4f23f6e)
 
@@ -145,7 +145,7 @@ We need to link our Baseline Security Auditing GPO to our OU. By enabling this, 
 
 # Windows 10 Client
 
-*Ref Windows 10pro Setup & IP Assigning*
+*Ref : Windows 10pro Setup & IP Assigning*
 
 
 ![static-ip2](https://github.com/user-attachments/assets/aaf19906-73b2-4658-81e0-9a0422f833f8)
