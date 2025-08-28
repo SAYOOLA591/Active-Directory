@@ -68,7 +68,7 @@ By default, Windows systems only log a limited set of events, resulting in signi
 
 We will review the recommended audit policies by operating system and categorise them accordingly. To proceed, access our Active Directory Domain Controller (ADDC) and open the Group Policy Management console. Under the forest containing our domain name, navigate to the domain section. From there, create a new policy. Right-click on the new policy and select "Edit." Name the new policy "Audit Policy - Endpoint."
 
-Next, go to the policies section, choose Windows Settings, then Security Settings, and finally select Advanced Audit Policy Configuration. This is where we will configure all our baseline settings.
+Next, navigate to the Policies section, select Windows Settings, then Security Settings, and finally choose Advanced Audit Policy Configuration. This is where we will configure all our baseline settings.
 
 ![gpo-recomm1](https://github.com/user-attachments/assets/82e195cc-c509-4ba7-8e2d-379c01765290)
 
@@ -145,9 +145,9 @@ We need to link our Baseline Security Auditing GPO to our OU. By enabling this, 
 
 # Windows 10 Client
 
-Windows 10pro Setup & IP Assigning
+*Ref Windows 10pro Setup & IP Assigning*
 
-*Ref*
+
 ![static-ip2](https://github.com/user-attachments/assets/aaf19906-73b2-4658-81e0-9a0422f833f8)
 
 Joining domain
