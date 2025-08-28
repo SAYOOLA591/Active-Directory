@@ -5,7 +5,7 @@
 This LAB showcases the design and enhancement of a Windows Active Directory (AD) environment, which forms the foundation of enterprise identity and access management within the Security Operations Environment. The objective of this project is to illustrate how AD security controls, baseline audit policies, and endpoint telemetry can be integrated to improve visibility, ensure compliance, and enhance threat detection across domain-joined systems.
 
 # Architecture Overview
-![architectu-image](
+![architectu-image](https://github.com/user-attachments/assets/fecace20-3e55-498f-baa5-b26df05642bd)
 
 # **Technologies:**
 
