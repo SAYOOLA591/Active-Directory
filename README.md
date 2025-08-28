@@ -10,17 +10,10 @@ This LAB showcases the design and enhancement of a Windows Active Directory (AD)
 # **Technologies:**
 
 - **Active Directory**
-  - Active Directory Domain Services (AD DS)
-  - Active Directory Users and Computers (ADUC)
-  - DNS (Domain Name System) for domain resolution
 - **Domain Controller**
-  - Windows Server providing Active Directory and authentication services
 - **Windows 10 Pro Client**
-  - Domain-joined endpoint for testing Group Policy Objects (GPOs) and telemetry
 - **Sysmon (System Monitor)**
-  - Advanced endpoint telemetry for monitoring process, network, and registry events
 - **Splunk Universal Forwarder**
-  - Log forwarding agent used to send Active Directory, Sysmon, and Windows logs to Splunk SIEM (Security Information and Event Management)
 #
 
 # Why Active Directory Matters
