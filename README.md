@@ -4,7 +4,7 @@
 
 This LAB showcases the design and enhancement of a Windows Active Directory (AD) environment, which forms the foundation of enterprise identity and access management within the Security Operations Environment. The objective of this project is to illustrate how AD security controls, baseline audit policies, and endpoint telemetry can be integrated to improve visibility, ensure compliance, and enhance threat detection across domain-joined systems.
 
-# Architectural Overview
+# Architecture Overview
 ![architectu-image](
 
 # **Technologies:**
@@ -37,14 +37,15 @@ Active Directory serves as the central hub for managing users, computers, and se
 # Table Of Content
 
 1. [Introduction](#introduction)
-2. [Technologies](#technologies)
-3. [Why Active Directory Matters](#why-active-directory-matters)
-4. [Active Directory Deployment](#active-directory-deployment)
-5. [Deploying Microsoft baseline Audit GPO](#deploying-microsoft-baseline-audit-gpo)
-6. [Advanced Audit Policy Configuration Settings](#advanced-audit-policy-configuration-settings)
-7. [Windows 10 Client](#windows-10-client)
-8. [Sysmon Deployment](#sysmon-deployment)
-9. [Splunk Forwarder](#splunk-forwarder)
+2. [Architecture Overview](#architecture-overview)
+3. [Technologies](#technologies)
+4. [Why Active Directory Matters](#why-active-directory-matters)
+5. [Active Directory Deployment](#active-directory-deployment)
+6. [Deploying Microsoft baseline Audit GPO](#deploying-microsoft-baseline-audit-gpo)
+7. [Advanced Audit Policy Configuration Settings](#advanced-audit-policy-configuration-settings)
+8. [Windows 10 Client](#windows-10-client)
+9. [Sysmon Deployment](#sysmon-deployment)
+10. [Splunk Forwarder](#splunk-forwarder)
 
 ---
 
