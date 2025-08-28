@@ -46,6 +46,10 @@ Active Directory serves as the central hub for managing users, computers, and se
 
 *Ref : Active Directory Installation*
 
+![ADDC-O2](https://github.com/user-attachments/assets/47a94232-3985-4cab-a643-5e3b26a22e36)
+
+![addc-03](https://github.com/user-attachments/assets/2a6b56a6-ebe0-4cbb-be34-4601df139de5)
+
 ![ADDC-O1](https://github.com/user-attachments/assets/74019068-e734-418e-87d6-42847b4fb0d6)
 
 *Ref : Static IP Assigned for Server*
