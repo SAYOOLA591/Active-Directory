@@ -38,7 +38,7 @@ Active Directory serves as the central hub for managing users, computers, and se
 7. [Advanced Audit Policy Configuration Settings](#advanced-audit-policy-configuration-settings)
 8. [Windows 10 Client](#windows-10-client)
 9. [Sysmon Installation](#sysmon-installation)
-10. [Splunk Forwarder](#splunk-forwarder)
+10. [Universal Splunk Forwarder](#universal-splunk-forwarder)
 11. [Splunk (SIEM) Log Query Overview](#splunk-siem-log-query-overview)
 
 ---
@@ -171,9 +171,9 @@ Although we have updated our machines with the baseline recommendations provided
 
 ---
 
-# Splunk Forwarder
+# Universal Splunk Forwarder
 
-### Setting Up Splunk Forwarder:
+### Setting Up Universal Splunk Forwarder:
 
 Installed and configured Splunk Forwarder on ADDC01 and target-PC (Windows 10) to send data to the Splunk server as a receiving indexer.
 
