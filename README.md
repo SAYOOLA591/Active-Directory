@@ -167,7 +167,7 @@ Joining domain
 
 Although we have updated our machines with the baseline recommendations provided by Microsoft, I'll still install and configure Sysmon to provide additional telemetry. In many environments, a system or even an EDR wouldn't be available. This is why it is essential to know how to enable proper logging on our machines to provide us with the telemetry that can help us during an investigation. Default settings are not enough.
 
-![sysmon-install](https://github.com/user-attachments/assets/6f0965a3-5495-4c21-8695-051c12926157)
+![sysmon-install](https://github.com/user-attachments/assets/37f4790f-f3b2-4f76-bc3e-1fd5babb044c)
 
 ---
 
@@ -209,7 +209,7 @@ Restarting the Splunk Forwarder under Services on ADDC01 AND Target-PC (Windows 
 I am super excited everything looks good! As we can see, our logs are ready to be queried in our SIEM platform.
 
 ![splunk-log1](https://github.com/user-attachments/assets/70910d30-acb5-46fb-a660-933158445f63)
-![splunk-log2](https://github.com/user-attachments/assets/514a9d3b-5cde-49ce-9948-1ea03e29b285)
+![splunk-log2](https://github.com/user-attachments/assets/fc393eca-ab83-4b63-a5d8-04bf5c83495b)
 
 ---
 
