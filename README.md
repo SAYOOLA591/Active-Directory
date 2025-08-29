@@ -211,6 +211,17 @@ I am super excited everything looks good! As we can see, our logs are ready to b
 ![splunk-log1](https://github.com/user-attachments/assets/70910d30-acb5-46fb-a660-933158445f63)
 ![splunk-log2](https://github.com/user-attachments/assets/514a9d3b-5cde-49ce-9948-1ea03e29b285)
 
+---
+
+# Conclusion
+
+I am excited about the progress made and the skills gained throughout the process. Let’s recap our achievements. We began with the deployment of Active Directory and provisioning users to different organisational units, followed by the implementation of the Microsoft baseline audit GPO. Next, we enabled the forced audit policy in local policies and joined our Windows 10 client to the ADDC.
+
+We then configured Sysmon and the Splunk Universal Forwarder on both the ADDC and the Windows machine, including the necessary inputs.conf adjustments and port configurations for seamless log forwarding.
+
+I am thrilled to see that everything is functioning correctly, and our logs are now ready to be queried in Splunk. This lab effectively demonstrates how the various components work together to build a strong defensive security posture, providing a solid foundation for cybersecurity best practices.
+
+
 
 
 
