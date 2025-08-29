@@ -39,6 +39,7 @@ Active Directory serves as the central hub for managing users, computers, and se
 8. [Windows 10 Client](#windows-10-client)
 9. [Sysmon Deployment](#sysmon-deployment)
 10. [Splunk Forwarder](#splunk-forwarder)
+11. [Splunk (SIEM) Log Query Overview](#splunk-siem-log-query-overview)
 
 ---
 
@@ -200,6 +201,17 @@ Restarting the Splunk Forwarder under Services on ADDC01 AND Target-PC (Windows 
 ![services-restart](https://github.com/user-attachments/assets/4b4b0039-e497-42b7-8a5f-c85b7babac9f)
 
 ![services-restart2](https://github.com/user-attachments/assets/b2c8af47-2058-42dc-899d-385ef3b98fea)
+
+#
+
+## Splunk (SIEM) Log Query Overview
+
+I am super excited everything looks good! As we can see, our logs are ready to be queried in our SIEM platform.
+
+![splunk-log1](https://github.com/user-attachments/assets/70910d30-acb5-46fb-a660-933158445f63)
+![splunk-log2](https://github.com/user-attachments/assets/514a9d3b-5cde-49ce-9948-1ea03e29b285)
+
+
 
 
 
