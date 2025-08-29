@@ -172,7 +172,36 @@ Although we have updated our machines with the baseline recommendations provided
 
 # Splunk Forwarder
 
-Created an inputs.conf file in C:\Program Files\SplunkUniversalForwarder\etc\system\local on Windows Machine and ADDC01, Configuring settings.
+### Setting Up Splunk Forwarder:
+
+Installed and configured Splunk Forwarder on ADDC01 and target-PC (Windows 10) to send data to the Splunk server as a receiving indexer.
+
+![splunk-forwarder](https://github.com/user-attachments/assets/be078ca2-1f8f-46c5-a8d6-638b00ecac6b)
+
+
+### Configuring Inputs for Splunk Forwarder:
+
+Created an inputs.conf file in C:\Program Files\SplunkUniversalForwarder\etc\system\local on ADDC01 and target-PC (Windows 10), Configuring settings.
+
+![inputs-conf](https://github.com/user-attachments/assets/c33deaae-606d-4b5f-bc27-5a7c59c6846b)
+
+### Configuring Splunk Forwarder Port:
+
+To enable seamless log forwarding from Windows endpoints, Active Directory, and Sysmon, a Splunk receiving port will be configured.
+
+![forwarder-port](https://github.com/user-attachments/assets/c8d65b27-c661-4af1-a22e-3cc9d65bc1e0)
+
+![forwarder-port2](https://github.com/user-attachments/assets/cd407f3f-0a4c-4330-b82e-21813a7cf317)
+
+### Restarting Splunk Forwarder Service:
+
+Restarting the Splunk Forwarder under Services on ADDC01 AND Target-PC (Windows 10) as a local system account that way it can have all of the permission to read required logs by default the splunk forwarder account can not read Sysmon logs.
+
+![services-restart](https://github.com/user-attachments/assets/4b4b0039-e497-42b7-8a5f-c85b7babac9f)
+
+![services-restart2](https://github.com/user-attachments/assets/b2c8af47-2058-42dc-899d-385ef3b98fea)
+
+
 
 
 
