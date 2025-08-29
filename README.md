@@ -37,7 +37,7 @@ Active Directory serves as the central hub for managing users, computers, and se
 6. [Deploying Microsoft baseline Audit GPO](#deploying-microsoft-baseline-audit-gpo)
 7. [Advanced Audit Policy Configuration Settings](#advanced-audit-policy-configuration-settings)
 8. [Windows 10 Client](#windows-10-client)
-9. [Sysmon Deployment](#sysmon-deployment)
+9. [Sysmon Installation](#sysmon-installation)
 10. [Splunk Forwarder](#splunk-forwarder)
 11. [Splunk (SIEM) Log Query Overview](#splunk-siem-log-query-overview)
 
@@ -163,7 +163,7 @@ Joining domain
 
 ---
 
-# Sysmon Deployment
+# Sysmon Installation
 
 Although we have updated our machines with the baseline recommendations provided by Microsoft, I'll still install and configure Sysmon to provide additional telemetry. In many environments, a system or even an EDR wouldn't be available. This is why it is essential to know how to enable proper logging on our machines to provide us with the telemetry that can help us during an investigation. Default settings are not enough.
 
