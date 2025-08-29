@@ -16,8 +16,10 @@ Now, run `Sysmon64.exe` by simply typing it and pressing **Enter**
 
 Please note that this will run Sysmon without installation and will not make any changes to the computer at this stage. To install Sysmon with your configuration file (`sysmonconfig.xml`), use the following command in PowerShell:
 
-```Sysmon64.exe -i sysmonconfig.xml
 ```
+Sysmon64.exe -i sysmonconfig.xml
+```
+
 Then press **Enter**
 
 Once you have reviewed the license agreement, click **Agree** to continue
