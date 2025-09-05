@@ -1,4 +1,4 @@
-# Active Directory Security & Endpoint Hardening Lab
+# Active Directory Security & Endpoint Hardening
 
 # Introduction
 
